@@ -6,45 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./scripts.js" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.22/dist/full.css" rel="stylesheet" type="text/css" />
     <title>Calculatrice</title>
   </head>
-  <body>
-<header>
+  <body class="min-h-screen bg-gray-700 flex items-center justify-center bg-gradient-to-r from-red-400 via-gray-300 to-blue-500 ">
 
-</header>
-
-    <main>
-      <h1>Calculatrice</h1>
-
-
-
-
-      <div>
-        <input type="text" placeholder="0" id="result" disabled>
+    <main class="border-8 rounded-md shadow-lg 
+    ">
+      <h1 class="text-black">Calculatrice</h1>
+        <input type="text" class="bg-transparent outline-none text-mid text-white " placeholder="0" id="result" disabled>
 <br>
-        <button onclick="clearResultat()">C</button>
-        <button onclick="addNombre('/')">/</button>
-        <button onclick="addNombre('*')">*</button>
-        <button onclick="addNombre('-')">-</button>
+        <button  class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded " onclick="clearResultat()">C</button>
+        <button  class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded " onclick="addNombre('/')">/</button>
+        <button  class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded" onclick="addNombre('*')">*</button>
+        <button  class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded " onclick="addNombre('-')">-</button>
 <br>
-        <button onclick="addNombre('1')">1</button>
-        <button onclick="addNombre('2')">2</button>
-        <button onclick="addNombre('3')">3</button>
-        <button onclick="addNombre('+')">+</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('7')">7</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('8')">8</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('9')">9</button>
+        <button  class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-4 border-b-4 border-green-700 hover:border-green-500 rounded " onclick="addNombre('+')">+</button>
 <br>
 
-        <button onclick="addNombre('4')">4</button>
-        <button onclick="addNombre('5')">5</button>
-        <button onclick="addNombre('6')">6</button>
-        <button onclick="calculate()">=</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('4')">4</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('5')">5</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('6')">6</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="calculate()">=</button>
         <br>
 
-        <button onclick="addNombre('7')">7</button>
-        <button onclick="addNombre('8')">8</button>
-        <button onclick="addNombre('9')">9</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('1')">1</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('2')">2</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('3')">3</button>
         <br>
-        <button onclick="addNombre('0')">0</button>
-        <button onclick="addNombre('.')">.</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('0')">0</button>
+        <button  class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded " onclick="addNombre('.')">.</button>
       </div>
 
       </div>
